@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    HTTPS METHODS
+
+Method is a systematic procedure, technique, or mode of inquiry employed by or applied to a particular discipline or art.
+
+HTTP requests or methods are the underlying framework that allows users to interact with websites through browsers. This framework is also used in mobile applications that make use of APIs which inherently include combinations of these Request Methods / Verbs for easier development and testing and ensure a smooth and simplified user experience.
+
+HTTP (Hypertext Transfer Protocol) is the universally agreed-upon format of transmitting data over a network that governs how data is exchanged between the user devices and website servers and what actions are taken by the web servers and browsers for each ‘command’.g hypertext links for validity, accessibility, and recent modification, or simply checking what a Get request will return before actually passing a request.
+The following are the HTTPS Methods;
+1. Get
+
+
+    • The GET method is used to retrieve information (“entity”) from the webserver using a specified Request-URI (Uniform Resource Identifier). Requests using GET must only retrieve data and have no other effect on the data.
+    • A conditional GET method requests that the entity be transferred only under the circumstances described by the conditional header field(s), intended to reduce avoidable network usage. Similarly, partial GET requests that only part of the entity be transferred.
+2. Head
+    • The Head method is identical to Get except that the server transfers the status line and the header section only, without the response body. This is useful for retrieving meta-information written in response headers, without having to transmit the entire content.
+    • This method is often used for testing hypertext links for validity, accessibility, and recent modification, or simply checking what a Get request will return before actually passing a request.
+3. Post
+    • This request is used to transmit important structured data to the server, for example, customer data, file uploads, etc. using HTML forms to create or update a resource. It requests the origin server to accept the ‘entity’ enclosed within the request body as a new subordinate of the resource identified by the Request-URI.
+    • A simple example is a “Contact” form on a website. When you fill out the inputs in a form and hit “Send”, that data is embedded in the request body and sent to the server in a format like JSON, XML, or any of other formats.
+4. Options
+    • Though not as widely used as the other HTTP methods request should return data describing what other methods the server supports at the given URL without indicating a resource action or requesting a resource retrieval.
+    • This can be used to check the functionality of a web server by requesting ‘*’ , which indicates that the request does not apply to a particular resource.
+5. Put
+    • Similar to Post, it replaces all the current representations of the target resource with the uploaded content. The Put method requests that the included entity be stored under the specified Request-URI. If the Request-URI refers to an already existing resource, the entity should be considered as a modified version of the existing one on the server.
+    • Calling the same Put request multiple times always produces the same result, while calling a Post request repeatedly may create the same resource multiple times.
+6. Delete
+    • This method is used to delete the resource at the specified URL. The end client cannot be assured that the action has been carried out, even if the status code returned from the web server specifies that the action has been finished successfully.
+    • However, the server is not expected to indicate success except, when the response is given, it erases the resource or moves it to an isolated location.
+7. Trace
+    • This method allows the client to see what is being received at the server end of the request chain and to use that data for testing so that the client can see what changes (if any) have been made by intermediary servers.
+    • The final recipient of the request replicates the message received back to the client as the entity-body of the response.
+8. Connect
+    • This transforms the request connection to a transparent TCP/IP tunnel, typically to enable SSL-encrypted data exchange (HTTPS) through an unencrypted HTTP proxy.
+    • This is called HTTP Tunneling. The request creates a tunnel to the server indicated by the target resource.
+9. Patch
+    • This method applies partial modifications to a resource. It provides an entity having a list of changes to be applied to the resource in the form of a Patch document that uses structures such as XML or JSON or others.
+    • The Patch method is faster and less resource-consuming than the put method when making partial changes to the specified resource.
+
+
+
+</body>
+</html>
